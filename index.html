@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Memory Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="orb orb-three"></div>
+    </div>
+
+
+    <main class="game">
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div class="title-area">
+
+                <div class="eyebrow">
+                    <span></span>
+                    MEMORY CHALLENGE
+                </div>
+
+                <h1>Find the pairs.</h1>
+
+                <p>
+                    Test your memory and match every card.
+                </p>
+
+            </div>
+
+
+            <div class="stats">
+
+                <div class="stat">
+                    <span>Moves</span>
+                    <strong id="moves">0</strong>
+                </div>
+
+                <div class="stat">
+                    <span>Time</span>
+                    <strong id="time">00:00</strong>
+                </div>
+
+                <div class="stat">
+                    <span>Matches</span>
+                    <strong id="matches">0/8</strong>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- GAME BOARD -->
+
+        <section class="board-wrapper">
+
+            <div id="board" class="board"></div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <div class="bottom">
+
+            <div class="progress-area">
+
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+
+                <span id="progress-text">
+                    0 of 8 pairs
+                </span>
+
+            </div>
+
+
+            <button id="restart" class="restart">
+                Restart
+            </button>
+
+        </div>
+
+
+        <p id="message" class="message">
+            Choose a card to begin.
+        </p>
+
+    </main>
+
+
+    <!-- WIN SCREEN -->
+
+    <div id="win-screen" class="win-screen">
+
+        <div class="win-card">
+
+            <div class="win-icon">
+                ✨
+            </div>
+
+            <h2>Perfect memory!</h2>
+
+            <p>
+                You found every pair.
+            </p>
+
+
+            <div class="final-stats">
+
+                <div>
+                    <span>Moves</span>
+                    <strong id="final-moves">0</strong>
+                </div>
+
+                <div>
+                    <span>Time</span>
+                    <strong id="final-time">00:00</strong>
+                </div>
+
+            </div>
+
+
+            <button id="play-again" class="play-again">
+                Play Again
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
